@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/StockTwits-EXP/static/css/main.06d97062.chunk.css",
-    "main.js": "/StockTwits-EXP/static/js/main.d49d65d2.chunk.js",
-    "main.js.map": "/StockTwits-EXP/static/js/main.d49d65d2.chunk.js.map",
+    "main.js": "/StockTwits-EXP/static/js/main.e03aa908.chunk.js",
+    "main.js.map": "/StockTwits-EXP/static/js/main.e03aa908.chunk.js.map",
     "runtime-main.js": "/StockTwits-EXP/static/js/runtime-main.c691880d.js",
     "runtime-main.js.map": "/StockTwits-EXP/static/js/runtime-main.c691880d.js.map",
-    "static/js/2.85540902.chunk.js": "/StockTwits-EXP/static/js/2.85540902.chunk.js",
-    "static/js/2.85540902.chunk.js.map": "/StockTwits-EXP/static/js/2.85540902.chunk.js.map",
+    "static/js/2.4c6aa0fe.chunk.js": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js",
+    "static/js/2.4c6aa0fe.chunk.js.map": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js.map",
     "index.html": "/StockTwits-EXP/index.html",
-    "precache-manifest.8596f58bbe18be932c4fd54da1befb49.js": "/StockTwits-EXP/precache-manifest.8596f58bbe18be932c4fd54da1befb49.js",
+    "precache-manifest.21f45aee63d90469040e6970c2f1adfe.js": "/StockTwits-EXP/precache-manifest.21f45aee63d90469040e6970c2f1adfe.js",
     "service-worker.js": "/StockTwits-EXP/service-worker.js",
     "static/css/main.06d97062.chunk.css.map": "/StockTwits-EXP/static/css/main.06d97062.chunk.css.map",
-    "static/js/2.85540902.chunk.js.LICENSE.txt": "/StockTwits-EXP/static/js/2.85540902.chunk.js.LICENSE.txt"
+    "static/js/2.4c6aa0fe.chunk.js.LICENSE.txt": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c691880d.js",
-    "static/js/2.85540902.chunk.js",
+    "static/js/2.4c6aa0fe.chunk.js",
     "static/css/main.06d97062.chunk.css",
-    "static/js/main.d49d65d2.chunk.js"
+    "static/js/main.e03aa908.chunk.js"
   ]
 }
