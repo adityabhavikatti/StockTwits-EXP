@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/StockTwits-EXP/static/css/main.06d97062.chunk.css",
-    "main.js": "/StockTwits-EXP/static/js/main.e03aa908.chunk.js",
-    "main.js.map": "/StockTwits-EXP/static/js/main.e03aa908.chunk.js.map",
+    "main.js": "/StockTwits-EXP/static/js/main.05d3c3cc.chunk.js",
+    "main.js.map": "/StockTwits-EXP/static/js/main.05d3c3cc.chunk.js.map",
     "runtime-main.js": "/StockTwits-EXP/static/js/runtime-main.c691880d.js",
     "runtime-main.js.map": "/StockTwits-EXP/static/js/runtime-main.c691880d.js.map",
     "static/js/2.4c6aa0fe.chunk.js": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js",
     "static/js/2.4c6aa0fe.chunk.js.map": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js.map",
     "index.html": "/StockTwits-EXP/index.html",
-    "precache-manifest.21f45aee63d90469040e6970c2f1adfe.js": "/StockTwits-EXP/precache-manifest.21f45aee63d90469040e6970c2f1adfe.js",
+    "precache-manifest.2a65976070843ad39ca42640f7c1a168.js": "/StockTwits-EXP/precache-manifest.2a65976070843ad39ca42640f7c1a168.js",
     "service-worker.js": "/StockTwits-EXP/service-worker.js",
     "static/css/main.06d97062.chunk.css.map": "/StockTwits-EXP/static/css/main.06d97062.chunk.css.map",
     "static/js/2.4c6aa0fe.chunk.js.LICENSE.txt": "/StockTwits-EXP/static/js/2.4c6aa0fe.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c691880d.js",
     "static/js/2.4c6aa0fe.chunk.js",
     "static/css/main.06d97062.chunk.css",
-    "static/js/main.e03aa908.chunk.js"
+    "static/js/main.05d3c3cc.chunk.js"
   ]
 }
