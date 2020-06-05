@@ -8,10 +8,21 @@ function App() {
   const [stox, setStox] = useState(null);
 
   const fetchData = async () => {
-    const response = await axios.get(
-      'https://api.stocktwits.com/api/2/streams/symbol/amzn.json'
-    );
-    setStox(response.data);
+    const response = await 
+    fetch('https://api.stocktwits.com/api/2/streams/symbol/amzn.json',  {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+      })
+    .then(results => {
+        return results.json();
+    }).then(data => {
+        console.log(data)
+        setStox(data);
+    });
   };
 
   return (
