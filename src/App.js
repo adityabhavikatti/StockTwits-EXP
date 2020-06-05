@@ -20,7 +20,7 @@ function App() {
     .then(results => {
         return results.json();
     }).then(data => {
-        console.log(data)
+        console.log("update fetch"+data)
         setStox(data);
     });
   };
