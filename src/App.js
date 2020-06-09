@@ -1,29 +1,39 @@
 import React, { useState } from 'react';
 //import Background from "./components/background"
-import axios from 'axios';
+
 import './App.css';
-import './styles.css'
+import './styles.css';
+import CheckBox from "./components/CheckBox";
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const url = "https://api.stocktwits.com/api/2/streams/symbol/amzn.json";
+
 
 function App() {
   const [stox, setStox] = useState(null);
+  const {accepted} = this.state;
 
   const fetchData = async () => {
-    const response = await 
-    fetch('https://api.stocktwits.com/api/2/streams/symbol/amzn.json',  {
+    await fetch(proxyurl + url,  {
         method: "GET",
         mode: "cors",
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
         },
       })
     .then(results => {
         return results.json();
     }).then(data => {
-        console.log("update fetch"+data)
         setStox(data);
-    });
+        setTimeout(() => fetchData(), 50000);
+    })
+    .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
   };
+
+  handleCheckbox = (accepted) => {
+    this.setState(state: {accepted});
+  }
 
   return (
     <div className="App">
@@ -35,6 +45,7 @@ function App() {
         <button className="fetch-button" onClick={fetchData}>
           Fetch Data
         </button>
+        <CheckBox label='Amazon' onChange={this.handleCheckbox} selected={accepted}></CheckBox>
         <br />
       </div>
 
@@ -50,9 +61,9 @@ function App() {
                 <h3>$AMZN</h3>
 
                 <div className="details">
-                  <p>👨: {tweet.user.name}</p>
-                  <p>📖: {tweet.body}</p>
-                  <p>⏰: {cleanedDate}</p>
+                <span role="img" aria-label="Person">👨 : {tweet.user.name}</span><br />
+                <span role="img" aria-label="Person">📖 : {tweet.body}</span><br />
+                <span role="img" aria-label="Person">⏰ : {cleanedDate}</span>
                 </div>
               </div>
             );
