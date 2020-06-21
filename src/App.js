@@ -3,14 +3,12 @@ import React, { useState } from 'react';
 
 import './App.css';
 import './styles.css';
-import CheckBox from "./components/CheckBox";
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
 const url = "https://api.stocktwits.com/api/2/streams/symbol/amzn.json";
 
 
 function App() {
   const [stox, setStox] = useState(null);
-  const {accepted} = this.state;
 
   const fetchData = async () => {
     await fetch(proxyurl + url,  {
@@ -31,9 +29,7 @@ function App() {
     .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
   };
 
-  handleCheckbox = (accepted) => {
-    this.setState(state: {accepted});
-  }
+ 
 
   return (
     <div className="App">
@@ -45,7 +41,6 @@ function App() {
         <button className="fetch-button" onClick={fetchData}>
           Fetch Data
         </button>
-        <CheckBox label='Amazon' onChange={this.handleCheckbox} selected={accepted}></CheckBox>
         <br />
       </div>
 
